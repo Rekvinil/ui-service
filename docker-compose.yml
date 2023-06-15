@@ -1,0 +1,15 @@
+version: '3'
+services:
+  cee_frontend:
+    build: ./frontend
+    container_name: cee_frontend
+    links:
+      - cee_backend
+    ports:
+      - 5000:5000
+
+  cee_backend:
+    build: ./backend
+    container_name: cee_backend
+    ports:
+      - 8001:6789

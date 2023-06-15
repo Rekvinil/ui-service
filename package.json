@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "minio": "^7.1.1",
+    "react-treebeard": "^3.2.4"
+  }
+}

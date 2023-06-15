@@ -1,0 +1,79 @@
+.App-header {
+  background-color: lightskyblue;
+  min-height: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+}
+
+#text-box {
+  height: 85vh;
+  background-color: #fff;
+  text-align: left;
+}
+
+#editor {
+  height: 77vh;
+}
+
+#text-box:focus {
+  border: 0;
+  outline: 0;
+}
+
+.App-header-top {
+  width: 98vw;
+  height: 8vh;
+  padding-top: 2vh;
+  padding-left: 2vh;
+  display: flex;
+  align-items: center;
+}
+
+.App-logo {
+  height: 8vh;
+  pointer-events: none;
+  margin-right: 5px;
+}
+
+.App-title {
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  margin-right: 10px;
+}
+
+.App-desc {
+  color: #444;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+@media (max-width: 900px) {
+  .App-title {
+      font-size: 30px;
+  }
+  .App-desc {
+    display: none;
+  }
+}
+
+.display-enter {
+  transform: scale(0);
+}
+.display-enter-active {
+  transform: scale(1);
+  transition: transform 500ms;
+}
+.display-exit {
+  height: 100%;
+  transform: scale(1);
+}
+.display-exit-active {
+  transform: scale(0);
+  height: 0;
+  transition: all 300ms;
+}
